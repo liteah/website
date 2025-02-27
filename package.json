@@ -6,6 +6,9 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
+    "lint": "pnpm biome lint --apply .",
+    "check": "pnpm biome check --apply .",
+    "format": "pnpm biome format --organize-imports-enabled --write .",
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
@@ -17,13 +20,13 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@fumadocs/cli": "^0.0.8",
     "@tailwindcss/postcss": "^4.0.7",
     "@types/mdx": "^2.0.13",
     "@types/node": "22.13.4",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "biome": "^0.3.3",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.7",
     "typescript": "^5.7.3"
